@@ -6,13 +6,15 @@ InstallISPConfig() {
   echo "Installing ISPConfig3... "
   cd /tmp
   if [ $CFG_ISPCVERSION == "Beta" ]; then
-	wget -O ISPConfig-3.1-beta.tar.gz  http://www.ispconfig.org/downloads/ISPConfig-3.1b2.tar.gz
-	tar xfz ISPConfig-3.1-beta.tar.gz
+	#wget -O ISPConfig-3.1-beta.tar.gz  http://www.ispconfig.org/downloads/ISPConfig-3.1b2.tar.gz
+	wget http://www.ispconfig.org/downloads/ISPConfig-3.1.1p1.tar.gz
+	tar xfz ISPConfig-3.1.1p1.tar.gz
 	cd ispconfig3_install*
 	cd install
   else
-	wget http://www.ispconfig.org/downloads/ISPConfig-3-stable.tar.gz
-	tar xfz ISPConfig-3-stable.tar.gz
+	#wget http://www.ispconfig.org/downloads/ISPConfig-3-stable.tar.gz
+	wget http://www.ispconfig.org/downloads/ISPConfig-3.1.1p1.tar.gz
+	tar xfz ISPConfig-3.1.1p1.tar.gz
 	cd ispconfig3_install/install/
   fi
   if [ $CFG_ISPC == "standard" ]; then
