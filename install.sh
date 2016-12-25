@@ -171,7 +171,7 @@ if [ -f /etc/debian_version ]; then
   InstallFix
   echo -e "${green}Well done ISPConfig installed and configured correctly :D ${NC}"
   echo "Now you can connect to your ISPConfig installation at https://$CFG_HOSTNAME_FQDN:8080 or https://IP_ADDRESS:8080"
-  echo "You can visit my GitHub profile at https://github.com/servisys/ispconfig_setup/"
+  
   if [ "$CFG_WEBMAIL" == "roundcube" ]; then
     if [ "$DISTRO" != "debian-8" ]; then
 		echo -e "${red}You had to edit user/pass /var/lib/roundcube/plugins/ispconfig3_account/config/config.inc.php of roudcube user, as the one you inserted in ISPconfig ${NC}"
@@ -218,7 +218,6 @@ else
 		#InstallFix
 		echo -e "${green}Well done ISPConfig installed and configured correctly :D ${NC}"
 		echo "Now you can connect to your ISPConfig installation at https://$CFG_HOSTNAME_FQDN:8080 or https://IP_ADDRESS:8080"
-		echo "You can visit my GitHub profile at https://github.com/servisys/ispconfig_setup/"
 		echo -e "${red}If you setup Roundcube webmail go to http://$CFG_HOSTNAME_FQDN/roundcubemail/installer and configure db connection${NC}"
 		echo -e "${red}After that disable access to installer in /etc/httpd/conf.d/roundcubemail.conf${NC}"
 	else
