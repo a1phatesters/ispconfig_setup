@@ -33,18 +33,18 @@ InstallISPConfig() {
 	  echo "ispconfig_use_ssl=y" >> autoinstall.ini
 	  echo
 	  echo "[ssl_cert]" >> autoinstall.ini
-	  echo "ssl_cert_country=IT" >> autoinstall.ini
-	  echo "ssl_cert_state=Italy" >> autoinstall.ini
-	  echo "ssl_cert_locality=Udine" >> autoinstall.ini
-	  echo "ssl_cert_organisation=Servisys di Temporini Matteo" >> autoinstall.ini
-	  echo "ssl_cert_organisation_unit=IT department" >> autoinstall.ini
+	  echo "ssl_cert_country=FR" >> autoinstall.ini
+	  echo "ssl_cert_state=France" >> autoinstall.ini
+	  echo "ssl_cert_locality=Paris" >> autoinstall.ini
+	  echo "ssl_cert_organisation=AlphaTesters" >> autoinstall.ini
+	  echo "ssl_cert_organisation_unit=X" >> autoinstall.ini
 	  echo "ssl_cert_common_name=$CFG_HOSTNAME_FQDN" >> autoinstall.ini
 	  echo
 	  echo "[expert]" >> autoinstall.ini
 	  echo "mysql_ispconfig_user=ispconfig" >> autoinstall.ini
-	  echo "mysql_ispconfig_password=afStEratXBsgatRtsa42CadwhQ" >> autoinstall.ini
+	  echo "mysql_ispconfig_password=znnJC8C|1OGZ4CW24\1B\;S:P@\\m#iy" >> autoinstall.ini
 	  echo "join_multiserver_setup=n" >> autoinstall.ini
-	  echo "mysql_master_hostname=master.example.com" >> autoinstall.ini
+	  echo "mysql_master_hostname=alphaserver.alphatesters.com" >> autoinstall.ini
 	  echo "mysql_master_root_user=root" >> autoinstall.ini
 	  echo "mysql_master_root_password=ispconfig" >> autoinstall.ini
 	  echo "mysql_master_database=dbispconfig" >> autoinstall.ini
@@ -60,7 +60,7 @@ InstallISPConfig() {
 	  echo "[update]" >> autoinstall.ini
 	  echo "do_backup=yes" >> autoinstall.ini
 	  echo "mysql_root_password=$CFG_MYSQL_ROOT_PWD" >> autoinstall.ini
-	  echo "mysql_master_hostname=master.example.com" >> autoinstall.ini
+	  echo "mysql_master_hostname=alphaserver.alphatesters.com" >> autoinstall.ini
 	  echo "mysql_master_root_user=root" >> autoinstall.ini
 	  echo "mysql_master_root_password=ispconfig" >> autoinstall.ini
 	  echo "mysql_master_database=dbispconfig" >> autoinstall.ini
