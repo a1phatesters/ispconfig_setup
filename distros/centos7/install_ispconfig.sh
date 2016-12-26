@@ -28,11 +28,11 @@ InstallISPConfig() {
   echo "ispconfig_use_ssl=y" >> autoinstall.ini
   echo
   echo "[ssl_cert]" >> autoinstall.ini
-  echo "ssl_cert_country=IT" >> autoinstall.ini
-  echo "ssl_cert_state=Italy" >> autoinstall.ini
-  echo "ssl_cert_locality=Udine" >> autoinstall.ini
-  echo "ssl_cert_organisation=Servisys di Temporini Matteo" >> autoinstall.ini
-  echo "ssl_cert_organisation_unit=IT department" >> autoinstall.ini
+  echo "ssl_cert_country=FR" >> autoinstall.ini
+  echo "ssl_cert_state=France" >> autoinstall.ini
+  echo "ssl_cert_locality=Paris" >> autoinstall.ini
+  echo "ssl_cert_organisation=AlphaTesters" >> autoinstall.ini
+  echo "ssl_cert_organisation_unit=AlphaServer" >> autoinstall.ini
   echo "ssl_cert_common_name=$CFG_HOSTNAME_FQDN" >> autoinstall.ini
   echo
   echo "[expert]" >> autoinstall.ini
